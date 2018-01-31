@@ -1,0 +1,44 @@
+1310. Right-Heavy Tree
+Constraints
+Time Limit: 1 secs, Memory Limit: 32 MB 
+
+Description
+
+A right-heavy tree is a binary tree where the value of a node is greater than or equal to the values of the nodes in its left subtree and less than the values of the nodes in its right subtree. A right-heavy tree could be empty. 
+
+Write a program that will create a right-heavy tree from a given input sequence and then traverse the tree and printing the value of the node each time a node is visited using inorder, preorder and postorder traversal. 
+
+The program should create the nodes in the tree dynamically. Thus, basically the tree can be of any size limited only by the amount of memory available in the computer. 
+
+
+Input
+
+The input will contain several test cases, each of them as described below. 
+
+The first number in the input indicates the number of nodes in the tree. Then, the input is followed by the integers comprising the values of the nodes of the tree. 
+
+
+Output
+For each test case, the output must follow the description below. The outputs of two consecutive cases will be separated by a blank line. The output will be the sequence of node and labeled by the traversal method used, as shown in the sample output below.
+
+Sample Input
+8 8 2 4 7 5 3 1 6
+9 5 5 6 3 2 9 3 3 2
+8 4 2 1 4 3 2 5 1
+0
+Sample Output
+Inorder: 1 2 3 4 5 6 7 8
+Preorder: 8 2 1 4 3 7 5 6
+Postorder: 1 3 6 5 7 4 2 8
+
+Inorder: 2 2 3 3 3 5 5 6 9
+Preorder: 5 5 3 2 2 3 3 6 9
+Postorder: 2 3 3 2 3 5 9 6 5
+
+Inorder: 1 1 2 2 3 4 4 5
+Preorder: 4 2 1 1 2 4 3 5
+Postorder: 1 2 1 3 4 2 5 4
+
+Inorder:
+Preorder:
+Postorder:

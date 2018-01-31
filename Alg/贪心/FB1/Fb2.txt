@@ -1,0 +1,57 @@
+#include <iostream>
+#include <stack>
+#include <set>
+#include <algorithm>
+#include <cmath>
+#include <time.h>
+#include <cstring>
+#include <cstdio>
+using namespace std;
+#define basic 1000000007
+struct Mtx{
+	long long v[2][2];
+};
+
+Mtx Mulmtx(Mtx a, Mtx b){
+	Mtx tmp;
+	for(int r=0; r<2; r++){
+		for(int l=0; l<2; l++){
+			tmp.v[r][l]=0;
+			for(int i=0; i<2; i++){
+				tmp.v[r][l] += a.v[r][i] * b.v[i][l];
+				tmp.v[r][l] %= basic;
+			}
+		}
+	}
+	return tmp;
+}
+
+Mtx power(int n){
+	Mtx a={1, 1, 1, 0}, b={1, 0, 0, 1};
+	while(n){
+//		printf("n=%d\n", n);
+		if(n%2){
+			b = Mulmtx(b, a);
+			n--;
+		}else{
+			a = Mulmtx(a, a);
+			n >>= 1;
+		}
+	}
+	return b;
+}
+
+int main(){
+	
+	int n;
+	Mtx m;
+	while(cin >> n){
+		if(n == 0){
+			cout << 0 << endl;
+			continue; 
+		} 
+		m = power(n-1);
+		cout <<"answer="<< m.v[0][0] << endl;
+	}
+	return 0;
+}

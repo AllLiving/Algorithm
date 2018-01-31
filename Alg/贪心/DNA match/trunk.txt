@@ -1,0 +1,16 @@
+Input may contain multiple test cases. The first line is a positive integer T(T<=20), indicating the number of test cases followed. In each test case, the first line is a positive integer n(n<=100), denoting the number of single strands below. And n lines follow, each line is a string comprised of four kinds of capital letters, A, T, C and G. The length of each string is no more than 100.
+Output
+For each test case, the output is one line containing a single integer, the maximum number of double strands that can be formed using those given single strands.
+Sample Input
+ Copy sample input to clipboard
+2
+3
+ATCG
+TAGC
+TAGG
+2
+AATT
+ATTA
+Sample Output
+1
+0

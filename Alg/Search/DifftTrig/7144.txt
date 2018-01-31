@@ -1,0 +1,44 @@
+7144. Different Triangles
+Constraints
+Time Limit: 1 secs, Memory Limit: 256 MB 
+
+Description
+
+
+ 
+
+
+Given N sticks of different length, please find out how many different ways you can form a triangle by three of these sticks.
+
+
+Input
+
+The first line contains an integer T (T<=20), indicating the number of test cases. Each case contains two lines. The first line contains an integer N (3<=N<=100). The second line contains N different positive integers not greater than 1000, indicating the lengths of sticks.
+
+
+Output
+
+
+ 
+
+
+For each case, output the number of ways to form a triangle.
+
+
+Sample Input
+2
+3
+1 2 3
+4
+2 3 4 5
+Sample Output
+0
+3
+Hint
+
+In the second sample, you can form a triangle using (2, 3, 4), (2, 4, 5) or (3, 4, 5).
+
+
+Problem Source
+“星海通杯”第四届中山大学ICPC新手赛 by 林瀚
+
